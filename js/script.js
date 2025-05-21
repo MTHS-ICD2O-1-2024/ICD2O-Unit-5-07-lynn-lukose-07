@@ -13,6 +13,6 @@ function calculate() {
   for (let counter = 1; counter <= integer; counter++) {
     answer = answer + counter
   }
-  document.getElementById("result").innerHTML =
+  document.getElementById("answer").innerHTML =
     "<p>The product is " + answer + ".</p>"
 }

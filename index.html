@@ -48,34 +48,30 @@
       </header>
       <main class="mdl-layout__content">
         <div class="right-image">
-          <img src="./images/triangle-types.webp" alt="Triangles image" />
+          <img src="./images/sum.png" alt="Image of the formula for finding the sum of a number's natural numbers." />
+        </div>
+        <div class="page-content">
+          Enter in the space which integer you want in this equation.
         </div>
         <br />
-        <div class="page-content-guide">
-          Enter in the space which integer you want in this equation
-        </div>
         <form>
-          <!-- Numeric Textfield -->
+          <h6>Integer:</h6>
           <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="integer"
-            />
-            <label class="mdl-textfield__label" for="integer">Enter integer here!</label>
+            <!-- input pattern attribute -->
+            <input class="mdl-textfield__input" type="number" min="1" id="integer" name="integer" />
+            <!-- mdl-textfield__label -->
+            <label class="mdl-textfield__label" for="integer">Enter integer here!
+            </label>
             <!-- class "mdl-textfield__error" -->
-            <span class="mdl-textfield__error">Input is not a number!</span>
+            <span class="mdl-textfield__error">Input is not a valid integer.</span>
           </div>
           <br />
-          <!-- Accent-colored raised button with ripple -->
-          <button
-            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            onclick="calculate ()"
-            type="button"
-          >
-            Calculate!
-          </button>
+          <div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent" onclick="calculate()"
+              type="button">
+              Calculate
+            </button>
+          </div>
         </form>
         <br />
         <div class="page-content-answer">
@@ -84,4 +80,5 @@
       </main>
     </div>
   </body>
-</html>
+  
+  </html>
