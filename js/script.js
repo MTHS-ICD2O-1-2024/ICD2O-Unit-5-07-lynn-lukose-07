@@ -14,5 +14,5 @@ function calculate() {
     answer = answer + counter
   }
   document.getElementById("answer").innerHTML =
-    "<p>The product is " + answer + ".</p>"
+    "<p>The answer is " + answer + ".</p>"
 }
